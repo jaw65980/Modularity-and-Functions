@@ -1,10 +1,12 @@
 
 #include <iostream>
+#include <iomanip>
 using namespace std;
 
 float Priceoutput(float oneyearResult, float twoyearResult)
 {
-	cout << endl << "Inflation rate changed by " << oneyearResult << " one year ago and " << twoyearResult << " two years ago." << endl;
+	cout << setprecision(2);
+	cout << endl << "Inflation rate for your item changed by " << oneyearResult << "% one year ago and " << twoyearResult << "% two years ago." << endl;
 	return 0;
 
 }
