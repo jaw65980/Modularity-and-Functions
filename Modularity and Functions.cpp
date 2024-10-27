@@ -2,6 +2,8 @@
 #include <iostream>
 using namespace std;
 
+
+//Calculates the radius of a circle.
 float CalcDistance(float point1x, float point1y, float point2x, float point2y)
 {
 	float xdistance = point2x - point1x;
@@ -17,6 +19,7 @@ float CalcDistance(float point1x, float point1y, float point2x, float point2y)
 	return distance;
 }
 
+//Inputs for the new and old coordinates for the center of a circle.
 float CalcRadius()
 {
 	float oldx;
@@ -35,6 +38,7 @@ float CalcRadius()
 	return CalcDistance(oldx, newx, oldy, newy);
 }
 
+//Asks for the radius of the circle to find the circumference.
 float CalcCircumference()
 {
 	float distance;
@@ -45,6 +49,7 @@ float CalcCircumference()
 	return circumference;
 }
 
+//Asks for the area of the circle to find the area.
 float CalcArea()
 {
 	float distance;
@@ -56,6 +61,7 @@ float CalcArea()
 	return area;
 }
 
+//Calls the functions.
 int main()
 {
 	CalcRadius();
