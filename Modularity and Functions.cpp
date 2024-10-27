@@ -3,6 +3,7 @@
 #include <iomanip>
 using namespace std;
 
+//Outputs the changes in inflation.
 float Priceoutput(float oneyearResult, float twoyearResult)
 {
 	cout << setprecision(2);
@@ -11,6 +12,7 @@ float Priceoutput(float oneyearResult, float twoyearResult)
 
 }
 
+//Calculates the changes of inflation from one and two years ago.
 float priceChange(float currentPrice, float oneyearPrice, float twoyearPrice)
 {
 	float oneyearInflation = currentPrice - oneyearPrice;
@@ -23,6 +25,7 @@ float priceChange(float currentPrice, float oneyearPrice, float twoyearPrice)
 	return 0;
 }
 
+//User input for the original price of an item as well as the prices the item was one and two years ago.
 float Priceinput()
 {
 	float currentPrice;
@@ -38,6 +41,7 @@ float Priceinput()
 	return 0;
 }
 
+//Calls the price input function.
 int main()
 {
 	Priceinput();
